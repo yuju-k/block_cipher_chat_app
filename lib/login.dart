@@ -59,15 +59,16 @@ class _HomeState extends State<Home> {
                             contentPadding: const EdgeInsets.only(
                                 left: 14.0, bottom: 8.0, top: 8.0),
                             focusedBorder: OutlineInputBorder(
-                              borderSide: new BorderSide(color: Colors.white),
-                              borderRadius: new BorderRadius.circular(10),
+                              borderSide: const BorderSide(color: Colors.white),
+                              borderRadius: BorderRadius.circular(10),
                             ),
                             enabledBorder: UnderlineInputBorder(
-                              borderSide: new BorderSide(color: Colors.white),
-                              borderRadius: new BorderRadius.circular(10),
+                              borderSide: const BorderSide(color: Colors.white),
+                              borderRadius: BorderRadius.circular(10),
                             ),
                           ),
                           validator: (value) {
+                            // ignore: prefer_is_empty
                             if (value!.length == 0) {
                               return "Email cannot be empty";
                             }
@@ -213,7 +214,7 @@ class _HomeState extends State<Home> {
                       },
                       color: Colors.blue[900],
                       child: const Text(
-                        "Register Now",
+                        "Register",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20,
@@ -223,18 +224,8 @@ class _HomeState extends State<Home> {
                     const SizedBox(
                       height: 15,
                     ),
-                    const Text(
-                      "Made by",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 40,
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
                     Text(
-                      "WEBFUN",
+                      "YUJU KANG",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 30,
